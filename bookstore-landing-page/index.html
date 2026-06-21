@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="BookVerse — Discover your next favorite book. Explore thousands of titles across every genre, from timeless classics to today's bestsellers." />
+  <meta name="keywords" content="bookstore, books, fiction, non-fiction, buy books, online bookstore, BookVerse" />
+  <meta name="author" content="BookVerse" />
+  <meta property="og:title" content="BookVerse — Discover Your Next Favorite Book" />
+  <meta property="og:description" content="Explore thousands of books across every genre at BookVerse." />
+  <meta property="og:type" content="website" />
+  <title>BookVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header id="site-header" role="banner">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+
+        <!-- Logo -->
+        <a href="#home" class="nav-logo" aria-label="BookVerse Home" id="nav-logo-link">
+          <span class="logo-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="28" height="28" rx="8" fill="#C8A2FF" />
+              <path d="M7 8h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7V8z" fill="white" opacity="0.9" />
+              <path d="M15 8h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2V8z" fill="white" opacity="0.5" />
+              <rect x="9" y="11" width="5" height="1.2" rx="0.6" fill="#C8A2FF" />
+              <rect x="9" y="13.5" width="4" height="1.2" rx="0.6" fill="#C8A2FF" />
+            </svg>
+          </span>
+          <span class="logo-text">BookVerse</span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="#categories" class="nav-link" id="nav-categories">Categories</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="#books" class="btn btn-primary nav-cta" id="nav-browse-btn">Browse Books</a>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false"
+          aria-controls="nav-links">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+
+        <div class="hero-content fade-up">
+          <p class="hero-tag" aria-label="New arrivals every week">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1L8.5 5H13L9.5 7.5L11 11.5L7 9L3 11.5L4.5 7.5L1 5H5.5L7 1Z" fill="#C8A2FF" />
+            </svg>
+            New arrivals every week
+          </p>
+
+          <h1 id="hero-heading" class="hero-heading">
+            Discover Your Next<br>
+            <span class="highlight">Favorite Book</span>
+          </h1>
+
+          <p class="hero-description">
+            Explore thousands of books across every genre — from timeless classics to today's bestsellers.
+            Your next great read is waiting at BookVerse.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#books" class="btn btn-primary" id="hero-browse-btn">Browse Books</a>
+            <a href="#about" class="btn btn-outline" id="hero-learn-btn">Learn More</a>
+          </div>
+
+          <div class="hero-stats" aria-label="BookVerse statistics">
+            <div class="stat-item">
+              <span class="stat-number">50K+</span>
+              <span class="stat-label">Books</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">12K+</span>
+              <span class="stat-label">Readers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number star-stat">4.9★</span>
+              <span class="stat-label">Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image fade-right" aria-hidden="true">
+          <div class="hero-img-glow"></div>
+          <img src="images/hero-book.png" alt="Stack of colorful books with reading glasses" class="hero-book-img"
+            loading="eager" />
+          <div class="floating-badge badge-1">📚 50K+ Books</div>
+          <div class="floating-badge badge-2">⭐ Top Rated</div>
+        </div>
+
+      </div>
+
+      <!-- Decorative wave -->
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FAF8FF" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES SECTION ===================== -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 id="features-heading">Why Choose BookVerse?</h2>
+          <p class="section-subtitle">Everything a book lover needs, in one beautifully crafted place.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-card fade-up" id="feature-collection" tabindex="0">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect x="4" y="6" width="5" height="16" rx="1" fill="#C8A2FF" />
+                <rect x="11" y="4" width="5" height="18" rx="1" fill="#A878FF" opacity="0.7" />
+                <rect x="18" y="8" width="5" height="14" rx="1" fill="#C8A2FF" opacity="0.5" />
+              </svg>
+            </div>
+            <div class="feature-card-text">
+              <h3>Huge Collection</h3>
+              <p>Over <strong>50,000 titles</strong> spanning every genre you can imagine.</p>
+            </div>
+          </article>
+
+          <article class="feature-card fade-up" id="feature-delivery" tabindex="0">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect x="2" y="10" width="18" height="11" rx="2" fill="#C8A2FF" opacity="0.3" />
+                <rect x="2" y="10" width="18" height="11" rx="2" stroke="#C8A2FF" stroke-width="1.5" />
+                <path d="M20 14h4l2 4v3h-6V14z" fill="#C8A2FF" opacity="0.6" />
+                <circle cx="8" cy="23" r="2" fill="#A878FF" />
+                <circle cx="20" cy="23" r="2" fill="#A878FF" />
+              </svg>
+            </div>
+            <div class="feature-card-text">
+              <h3>Fast Delivery</h3>
+              <p>Free <strong>2-day shipping</strong> on every order, anywhere in the country.</p>
+            </div>
+          </article>
+
+          <article class="feature-card fade-up" id="feature-prices" tabindex="0">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M14 4L16.5 10H23L18 14L20 20L14 16.5L8 20L10 14L5 10H11.5L14 4Z" fill="#C8A2FF"
+                  opacity="0.5" />
+                <circle cx="14" cy="14" r="4" fill="#C8A2FF" />
+                <path d="M12 14h4M14 12v4" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="feature-card-text">
+              <h3>Affordable Prices</h3>
+              <p>Up to <strong>60% off</strong> bestsellers and exclusive member discounts.</p>
+            </div>
+          </article>
+
+          <article class="feature-card fade-up" id="feature-authors" tabindex="0">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <circle cx="14" cy="10" r="5" fill="#C8A2FF" opacity="0.5" />
+                <path d="M4 24c0-5.5 4.5-9 10-9s10 3.5 10 9" stroke="#C8A2FF" stroke-width="1.8"
+                  stroke-linecap="round" />
+                <path d="M18 8l2 2-6 6-3-3 2-2 1 1L18 8z" fill="#A878FF" opacity="0.7" />
+              </svg>
+            </div>
+            <div class="feature-card-text">
+              <h3>Best Authors</h3>
+              <p>Curated picks from <strong>award-winning</strong> and emerging voices.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POPULAR BOOKS SECTION ===================== -->
+    <section class="books" id="books" aria-labelledby="books-heading">
+      <div class="container">
+        <div class="section-header-row fade-up">
+          <div>
+            <h2 id="books-heading">Popular Books</h2>
+            <p class="section-subtitle">Loved by readers this month.</p>
+          </div>
+          <a href="#books" class="view-all-link" id="view-all-books" aria-label="View all popular books">View all →</a>
+        </div>
+
+        <div class="books-grid" role="list">
+
+          <!-- Book 1 -->
+          <article class="book-card fade-up" role="listitem" id="book-card-1">
+            <div class="book-cover cover-purple">
+              <img src="images/book1.jpg" alt="The Silent Echo book cover" loading="lazy" />
+              <div class="book-badge">BOOK STORE</div>
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">The Silent Echo</h3>
+              <p class="book-author">by Eleanor Hayes</p>
+              <div class="book-footer">
+                <span class="book-price">$18.99</span>
+                <button class="btn btn-buy" id="buy-book-1" aria-label="Buy The Silent Echo for $18.99">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 2 -->
+          <article class="book-card fade-up" role="listitem" id="book-card-2">
+            <div class="book-cover cover-pink">
+              <img src="images/book2.jpg" alt="Midnight Library book cover" loading="lazy" />
+              <div class="book-badge">BOOK STORE</div>
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Midnight Library</h3>
+              <p class="book-author">by Matt Haes</p>
+              <div class="book-footer">
+                <span class="book-price">$22.50</span>
+                <button class="btn btn-buy" id="buy-book-2" aria-label="Buy Midnight Library for $22.50">Buy
+                  Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 3 -->
+          <article class="book-card fade-up" role="listitem" id="book-card-3">
+            <div class="book-cover cover-teal">
+              <img src="images/book3.jpg" alt="Atomic Focus book cover" loading="lazy" />
+              <div class="book-badge">STAND OUT</div>
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Atomic Focus</h3>
+              <p class="book-author">by Priya Shah</p>
+              <div class="book-footer">
+                <span class="book-price">$16.00</span>
+                <button class="btn btn-buy" id="buy-book-3" aria-label="Buy Atomic Focus for $16.00">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 4 -->
+          <article class="book-card fade-up" role="listitem" id="book-card-4">
+            <div class="book-cover cover-orange">
+              <img src="images/book4.jpg" alt="Cosmos of Code book cover" loading="lazy" />
+              <div class="book-badge">BOOK STORE</div>
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Cosmos of Code</h3>
+              <p class="book-author">by Elena Lin</p>
+              <div class="book-footer">
+                <span class="book-price">$34.99</span>
+                <button class="btn btn-buy" id="buy-book-4" aria-label="Buy Cosmos of Code for $34.99">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 5 -->
+          <article class="book-card fade-up" role="listitem" id="book-card-5">
+            <div class="book-cover cover-rose">
+              <img src="images/book5.jpg" alt="Whispers of Time book cover" loading="lazy" />
+              <div class="book-badge">BOOK STORE</div>
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Whispers of Time</h3>
+              <p class="book-author">by Sara Owens</p>
+              <div class="book-footer">
+                <span class="book-price">$14.75</span>
+                <button class="btn btn-buy" id="buy-book-5" aria-label="Buy Whispers of Time for $14.75">Buy
+                  Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Book 6 — CSS art cover -->
+          <article class="book-card fade-up" role="listitem" id="book-card-6">
+            <div class="book-cover cover-indigo">
+              <img src="images/book6.jpg" alt="The Last Algorithm book cover" loading="lazy" />
+              <div class="book-badge">TOP PICK</div>
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">The Last Algorithm</h3>
+              <p class="book-author">by Noah Carter</p>
+              <div class="book-footer">
+                <span class="book-price">$27.00</span>
+                <button class="btn btn-buy" id="buy-book-6" aria-label="Buy The Last Algorithm for $27.00">Buy
+                  Now</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORIES SECTION ===================== -->
+    <section class="categories" id="categories" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 id="categories-heading">Browse by Category</h2>
+          <p class="section-subtitle">Find exactly what you're in the mood for.</p>
+        </div>
+
+        <div class="categories-grid" role="list">
+
+          <a href="#books" class="category-card fade-up" id="cat-fiction" role="listitem" aria-label="Fiction books">
+            <div class="cat-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <rect x="4" y="5" width="6" height="20" rx="1.5" fill="#C8A2FF" opacity="0.8" />
+                <rect x="12" y="3" width="6" height="22" rx="1.5" fill="#A878FF" opacity="0.6" />
+                <rect x="20" y="7" width="6" height="18" rx="1.5" fill="#C8A2FF" opacity="0.4" />
+              </svg>
+            </div>
+            <span>Fiction</span>
+          </a>
+
+          <a href="#books" class="category-card fade-up" id="cat-nonfiction" role="listitem"
+            aria-label="Non-Fiction books">
+            <div class="cat-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <rect x="5" y="4" width="20" height="15" rx="2" fill="#C8A2FF" opacity="0.4" />
+                <rect x="5" y="4" width="20" height="15" rx="2" stroke="#C8A2FF" stroke-width="1.5" />
+                <path d="M5 11h20" stroke="#C8A2FF" stroke-width="1" />
+                <rect x="5" y="21" width="20" height="5" rx="1.5" fill="#C8A2FF" opacity="0.6" />
+              </svg>
+            </div>
+            <span>Non-Fiction</span>
+          </a>
+
+          <a href="#books" class="category-card fade-up" id="cat-science" role="listitem" aria-label="Science books">
+            <div class="cat-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle cx="15" cy="15" r="6" fill="#C8A2FF" opacity="0.4" />
+                <ellipse cx="15" cy="15" rx="12" ry="5" stroke="#C8A2FF" stroke-width="1.5" fill="none" />
+                <ellipse cx="15" cy="15" rx="12" ry="5" stroke="#C8A2FF" stroke-width="1.5" fill="none"
+                  transform="rotate(60 15 15)" />
+                <ellipse cx="15" cy="15" rx="12" ry="5" stroke="#C8A2FF" stroke-width="1.5" fill="none"
+                  transform="rotate(120 15 15)" />
+                <circle cx="15" cy="15" r="2.5" fill="#A878FF" />
+              </svg>
+            </div>
+            <span>Science</span>
+          </a>
+
+          <a href="#books" class="category-card fade-up" id="cat-selfhelp" role="listitem" aria-label="Self-Help books">
+            <div class="cat-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M15 4C15 4 8 8 8 16C8 20.4 11.1 24 15 24C18.9 24 22 20.4 22 16C22 8 15 4 15 4Z" fill="#C8A2FF"
+                  opacity="0.4" />
+                <path d="M15 4C15 4 8 8 8 16C8 20.4 11.1 24 15 24" stroke="#C8A2FF" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M15 4C15 4 22 8 22 16C22 20.4 18.9 24 15 24" stroke="#A878FF" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <path d="M11 17l2.5 2.5L19 13" stroke="#C8A2FF" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <span>Self-Help</span>
+          </a>
+
+          <a href="#books" class="category-card fade-up" id="cat-technology" role="listitem"
+            aria-label="Technology books">
+            <div class="cat-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <rect x="3" y="7" width="24" height="16" rx="2" fill="#C8A2FF" opacity="0.3" />
+                <rect x="3" y="7" width="24" height="16" rx="2" stroke="#C8A2FF" stroke-width="1.5" />
+                <rect x="10" y="23" width="10" height="2" rx="1" fill="#C8A2FF" opacity="0.6" />
+                <path d="M8 12l3 3-3 3" stroke="#A878FF" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M14 18h6" stroke="#C8A2FF" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <span>Technology</span>
+          </a>
+
+          <a href="#books" class="category-card fade-up" id="cat-mystery" role="listitem" aria-label="Mystery books">
+            <div class="cat-icon" aria-hidden="true">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle cx="15" cy="13" r="6" fill="#C8A2FF" opacity="0.4" />
+                <path d="M19 19l5 5" stroke="#C8A2FF" stroke-width="2" stroke-linecap="round" />
+                <path d="M13 11c0-1.1.9-2 2-2" stroke="#A878FF" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="15" cy="15" r="1.2" fill="#A878FF" />
+              </svg>
+            </div>
+            <span>Mystery</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about-container">
+
+        <div class="about-image fade-left" aria-hidden="true">
+          <div class="about-img-wrapper">
+            <img src="images/hero-book.png" alt="BookVerse - Stack of books illustration" loading="lazy" />
+            <div class="about-img-badge">
+              <span>📖</span>
+              <div>
+                <strong>Since 2018</strong>
+                <small>Serving readers</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content fade-right">
+          <p class="section-tag">ABOUT US</p>
+          <h2 id="about-heading">A Bookstore Built for<br>Curious Minds</h2>
+          <p class="about-description">
+            BookVerse started as a small shop between three friends who couldn't
+            stop trading favorite reads. Today, we connect millions of readers with
+            stories that move, teach, and inspire them.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-card" id="about-mission">
+              <h4>🎯 Our Mission</h4>
+              <p>Make good books accessible, affordable, and delightful to discover for every reader.</p>
+            </div>
+            <div class="about-card" id="about-vision">
+              <h4>🔭 Our Vision</h4>
+              <p>Build the world's most loved community of readers, writers, and lifelong learners.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 id="contact-heading">Get in Touch</h2>
+          <p class="section-subtitle">Questions, suggestions, or just want to talk books? We'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-cards fade-up">
+
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <rect x="2" y="6" width="22" height="14" rx="3" fill="#C8A2FF" opacity="0.3" />
+                <rect x="2" y="6" width="22" height="14" rx="3" stroke="#C8A2FF" stroke-width="1.5" />
+                <path d="M2 9l11 7 11-7" stroke="#A878FF" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Email</h3>
+            <a href="mailto:hello@bookverse.com" class="contact-detail"
+              aria-label="Send email to BookVerse">hello@bookverse.com</a>
+          </div>
+
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M6 4h5l2 5-2.5 2.5a11 11 0 0 0 4 4L17 13l5 2v5a2 2 0 0 1-2 2C8 22 4 8 4 6a2 2 0 0 1 2-2z"
+                  fill="#C8A2FF" opacity="0.3" />
+                <path d="M6 4h5l2 5-2.5 2.5a11 11 0 0 0 4 4L17 13l5 2v5a2 2 0 0 1-2 2C8 22 4 8 4 6a2 2 0 0 1 2-2z"
+                  stroke="#C8A2FF" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3>Phone</h3>
+            <a href="tel:+15551234567" class="contact-detail" aria-label="Call BookVerse">+1 (555) 123-4567</a>
+          </div>
+
+          <div class="contact-card" id="contact-address">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M13 2C9.1 2 6 5.1 6 9C6 14.5 13 22 13 22S20 14.5 20 9C20 5.1 16.9 2 13 2Z" fill="#C8A2FF"
+                  opacity="0.3" />
+                <path d="M13 2C9.1 2 6 5.1 6 9C6 14.5 13 22 13 22S20 14.5 20 9C20 5.1 16.9 2 13 2Z" stroke="#C8A2FF"
+                  stroke-width="1.5" />
+                <circle cx="13" cy="9" r="3" fill="#A878FF" opacity="0.8" />
+              </svg>
+            </div>
+            <h3>Address</h3>
+            <address class="contact-detail" aria-label="BookVerse address">228 Reader Lane, NY 10001</address>
+          </div>
+
+        </div>
+
+        <div class="contact-cta fade-up">
+          <a href="mailto:hello@bookverse.com" class="btn btn-primary" id="contact-us-btn">Contact Us</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo footer-logo" aria-label="BookVerse Home">
+          <span class="logo-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="8" fill="#C8A2FF" />
+              <path d="M7 8h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7V8z" fill="white" opacity="0.9" />
+              <path d="M15 8h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2V8z" fill="white" opacity="0.5" />
+            </svg>
+          </span>
+          <span class="logo-text">BookVerse</span>
+        </a>
+        <p>Your modern destination for the books you'll love next.</p>
+        <!-- Social Icons -->
+        <div class="social-links" aria-label="BookVerse on social media">
+          <a href="#" class="social-link" id="social-facebook" aria-label="BookVerse on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" id="social-tiktok" aria-label="BookVerse on TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.01a8.16 8.16 0 0 0 4.77 1.52V7.08a4.85 4.85 0 0 1-1.01-.39z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" id="social-instagram" aria-label="BookVerse on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" id="social-linkedin" aria-label="BookVerse on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul role="list">
+          <li><a href="#home" id="footer-home">Home</a></li>
+          <li><a href="#about" id="footer-about">About</a></li>
+          <li><a href="#categories" id="footer-categories">Categories</a></li>
+          <li><a href="#contact" id="footer-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Categories -->
+      <nav class="footer-col" aria-label="Book categories">
+        <h4>Categories</h4>
+        <ul role="list">
+          <li><a href="#categories" id="footer-cat-fiction">Fiction</a></li>
+          <li><a href="#categories" id="footer-cat-nonfiction">Non-Fiction</a></li>
+          <li><a href="#categories" id="footer-cat-science">Science</a></li>
+          <li><a href="#categories" id="footer-cat-selfhelp">Self-Help</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="current-year">2026</span> BookVerse. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-notification" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
