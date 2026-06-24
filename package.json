@@ -1,0 +1,13 @@
+{
+  "name": "bookverse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static BookVerse landing page",
+  "scripts": {
+    "dev": "serve bookstore-landing-page -l 8080",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
